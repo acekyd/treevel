@@ -2,13 +2,13 @@
 
 ## Installation
 
-1. Require this package in your composer.json and run composer update (or run `composer require winponta/treevel` directly):
+1. Require this package in your composer.json file and run composer install (or run `composer require winponta/treevel` directly):
 
     "winponta/treevel": "0.*"
 
-2. Run copmposer:
+2. Run composer:
 
-    `composer update`
+    `composer install`
 
 
 ## Using
@@ -30,7 +30,7 @@ Parent tree models are handled using `parent id` references.
 
 ##### Parent id references
 
-The default field value used by the package to handle the reference to parent record is named `parent_id`, you can change this value customizing the database field name your table/collection is using. Do this by overwriting the `$parentField` propertie:
+The default field value used by the package to handle the reference to parent record is named `parent_id`, you can change this value by customizing the database field name your table/collection is using. Do this by overwriting the `$parentField` property:
 
     <?php
         ...
@@ -41,7 +41,7 @@ The default field value used by the package to handle the reference to parent re
 
 ##### Node level propertie
 
-This propertie controls the deep level of the node on the tree. The default field value used to handle this feature is named `node_level`, you can change this value customizing the database field name your table/collection is using. Do this by overwriting the `$levelField` propertie:
+These properties controls the deep level of the node on the tree. The default field value used to handle this feature is named `node_level`, you can change this value by customizing the database field name your table/collection is using. Do this by overwriting the `$levelField` property:
 
     <?php
         ...
